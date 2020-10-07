@@ -5,7 +5,7 @@ import './Header.scss';
 const Header = () => {
     return(
         <h1>
-            Selfmade ToDo List by Stas
+            Selfmade ToDo List
         </h1>
     );
 }

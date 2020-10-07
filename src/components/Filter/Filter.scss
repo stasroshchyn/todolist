@@ -1,0 +1,19 @@
+select {
+    margin-left: 15px;
+    height: 40px;
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    border: 2px solid black;
+    &:focus {
+        outline: none;
+    }
+}
+
+option {
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+}

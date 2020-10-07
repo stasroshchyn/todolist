@@ -4,19 +4,24 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 8px;
+
+
     &:last-child {
         margin-bottom: 0;
     }
 
     &__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         box-sizing: border-box;
         padding: 5px 10px 5px 10px;
         width: 300px;
         min-height: 40px;
         background-color: white;
         font-size: 18px;
-        text-align: center;
         border-radius: 5px;
+        border: 2px solid black;
 
         &_done {
             text-decoration: line-through;
@@ -29,33 +34,45 @@
         display: flex;
     }
 
-    &__button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    &__button {       
         width: 40px;
         height: 40px;
         border: none;
-        color: white;
+        color: black;
+        background-color: white;
+        border: 2px solid black;
         cursor: pointer;
+        transition: 0.5s background-color;
+
         &:focus {
             outline: none;
         }
 
         &_done {
-            background-color: #81b29a;
-            border-top-left-radius: 5px;
             border-bottom-left-radius: 5px;
-        }
-
-        &_delete {
-            background-color: #e07a5f;
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-right: none;
+            
+            &:hover {
+                background-color: #68b0ab;
+            }
         }
 
         &_edit {
-            background-color: grey;
+            border-left: none;
+            border-right: none;
+            &:hover {
+                background-color: #d9c6a5;
+            }
+        }
+
+        &_delete {
+            border-left: none;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+            &:hover {
+                background-color: #726a95;
+            }
         }
     }
 }

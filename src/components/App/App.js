@@ -12,7 +12,6 @@ export default class App extends Component {
 		data:
 			[
 				{text: 'Create my first ToDo List', completed: false, id: 'qwe'},
-				{text: 'Finish this PET-Project', completed: false, id: 'asd'},
 				{text: 'Nice try', completed: false, id: 'zxc'},
 				{text: 'Got it!', completed: false, id: 'iop'}
 			],

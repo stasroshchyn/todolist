@@ -17,6 +17,7 @@ class Input extends Component {
         if (this.state.text.length != 0) {
             this.props.itemAdd(this.state.text);
         }
+        this.state.text = '';
     }
 
     render() {
@@ -24,8 +25,8 @@ class Input extends Component {
         return (
             <div className="input">
                 <form>
-                    <input name="input" onChange={this.catchText}></input>
-                    <button onClick={this.add}>+</button>
+                    <input value={this.state.text} autoComplete="off" name="input" onChange={this.catchText}></input>
+                    <button onClick={this.add}><i class="fas fa-plus fa-lg"></i></button>
                 </form>
             </div>
         )
